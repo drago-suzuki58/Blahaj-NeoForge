@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "BLAHAJ_BLAHAJ_CUDDLE",
+      "constructor": "(ZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "hibi/blahaj/client/BlahajArmPoses",
+        "field": "BLAHAJ_CUDDLE"
+      }
+    }
+  ]
+}
