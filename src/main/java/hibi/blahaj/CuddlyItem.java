@@ -51,7 +51,7 @@ public class CuddlyItem extends Item {
     @Override
     public void onCraftedBy(ItemStack stack, Level level, Player player) {
         if (player != null && !(player instanceof FakePlayer)) { // compensate for auto-crafter mods
-            stack.update(DataComponents.CUSTOM_DATA, CustomData.EMPTY, customData -> 
+            stack.update(DataComponents.CUSTOM_DATA, CustomData.EMPTY, customData ->
                 customData.update(tag -> tag.putString(OWNER_KEY, player.getName().getString())));
         }
         super.onCraftedBy(stack, level, player);

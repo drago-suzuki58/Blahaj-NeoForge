@@ -10,7 +10,7 @@
 		}
 	},
 	"result": {
-		"item": "blahaj:bread",
+		"id": "blahaj:bread",
 		"count": 1
 	}
 }

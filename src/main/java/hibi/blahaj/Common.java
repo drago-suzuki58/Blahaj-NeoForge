@@ -17,16 +17,18 @@ public class Common {
     public static final String MOD_ID = "blahaj";
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(BuiltInRegistries.ITEM, MOD_ID);
-    public static final DeferredHolder<Item, Item> BLUE_SHARK_ITEM = ITEMS.register("blue_shark",
+    public static final DeferredHolder<Item, Item> BLUE_SHARK_ITEM   = ITEMS.register("blue_shark",
         () -> new CuddlyItem(new Item.Properties().stacksTo(1), "item.blahaj.blue_shark.tooltip"));
-    public static final DeferredHolder<Item, Item> BREAD_ITEM =      ITEMS.register("bread",
+    public static final DeferredHolder<Item, Item> BREAD_ITEM        = ITEMS.register("bread",
         () -> new CuddlyItem(new Item.Properties().stacksTo(1), null));
-    public static final DeferredHolder<Item, Item> GRAY_SHARK_ITEM = ITEMS.register("gray_shark",
+    public static final DeferredHolder<Item, Item> GRAY_SHARK_ITEM   = ITEMS.register("gray_shark",
         () -> new CuddlyItem(new Item.Properties().stacksTo(1), "item.blahaj.gray_shark.tooltip"));
-    public static final DeferredHolder<Item, Item> BLUE_WHALE_ITEM = ITEMS.register("blue_whale",
+    public static final DeferredHolder<Item, Item> BLUE_WHALE_ITEM   = ITEMS.register("blue_whale",
         () -> new CuddlyItem(new Item.Properties().stacksTo(1), "item.blahaj.blue_whale.tooltip"));
-    public static final DeferredHolder<Item, Item> PINK_SHARK_ITEM = ITEMS.register("pink_shark",
+    public static final DeferredHolder<Item, Item> PINK_SHARK_ITEM   = ITEMS.register("pink_shark",
         () -> new CuddlyItem(new Item.Properties().stacksTo(1), "item.blahaj.pink_shark.tooltip"));
+    public static final DeferredHolder<Item, Item> GREEN_DRAGON_ITEM = ITEMS.register("green_dragon",
+        () -> new CuddlyItem(new Item.Properties().stacksTo(1), "item.blahaj.green_dragon.tooltip"));
 
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BLAHAJ_TAB = TABS.register("blahaj_tab", () -> CreativeModeTab.builder()
@@ -38,6 +40,7 @@ public class Common {
             output.accept(GRAY_SHARK_ITEM.get());
             output.accept(BLUE_WHALE_ITEM.get());
             output.accept(PINK_SHARK_ITEM.get());
+            output.accept(GREEN_DRAGON_ITEM.get());
         })
         .build()
     );
